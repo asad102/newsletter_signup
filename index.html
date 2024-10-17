@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="output.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main class="font-roboto text-base bg-Navy-dark min-h-screen flex justify-center items-center">
+    <article id="myarticle" class="bg-White lg:rounded-36 rounded-none flex lg:flex-row flex-col-reverse gap-10 overflow-hidden">
+      <div id="txt" class="txt flex flex-col gap-10 justify-center md:px-16 px-6 text-Navy-dark md:pb-0 pb-10">
+        <div class=" flex flex-col gap-6">
+          <h1 class="text-Heading">Stay updated!</h1>
+          <p class="text-Body">Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul class="flex flex-col gap-2.5">
+            <li class="flex items-start gap-4"><img src="./assets/images/icon-list.svg" alt="icon-list"> <span> Product discovery and building what matters </span> </li>
+            <li class="flex items-start gap-4"><img src="./assets/images/icon-list.svg" alt="icon-list"> <span> Measuring to ensure updates are a success </span></li>
+            <li class="flex items-start gap-4"><img src="./assets/images/icon-list.svg" alt="icon-list"> <span> And much more! </span></li>
+          </ul>
+        </div>
+        <form id="formemail" class=" flex flex-col gap-6" novalidate>
+          <div class="form-group flex flex-col gap-2">
+            <div class="labeling flex justify-between">
+              <label class="text-Bodysmall" for="email">Email address</label>
+              <span class="text-Vermellion" id="email-error"></span>
+            </div>
+
+            <input class="rounded-lg h-14 px-6 active:border-Vermellion stroke-Grey" type="text" name="email" id="email" placeholder="email@company.com">
+            
+          </div>
+          <div class="form-group bg-Navy-dark  text-White rounded-lg h-14 flex items-center justify-center">
+            <button  type="submit">Subscribe to monthly newsletter</button>
+          </div>
+        </form>
+      </div>
+
+      <picture class="md:py-6 md:pr-6  py-0 pr-0">
+        <source media="(min-width: 768px)" srcset="./assets/images/illustration-sign-up-desktop.svg"/>
+        <source media="(max-width: 768px)" srcset="./assets/images/illustration-sign-up-mobile.svg"/>
+        <img src="./assets/images/illustration-sign-up-desktop.svg"
+             alt="produce image" class="lg:rounded-2xl rounded-none w-full "/>
+    </picture>
+    
+    </article>
+    <div class="hidden justify-center items-start bg-White text-Navy-pale p-6 w-504 h-520 rounded-36" id="success-msg">
+      <img src="./assets/images/icon-success.svg" alt="icon-success">
+      <h1 class="text-Heading pt-10">Thanks for subscribing!</h1>
+      <p class="text-Body pt-6">A confirmation email has been sent to  <span class="text-Bodysmall" id="user-email"></span>. Please open it and click the button inside to confirm your subscription.</p>
+      <button id="dismiss-btn" class="mt-10 w-full bg-Navy-dark hover:bg-Vermellion text-White rounded-lg h-14 flex items-center justify-center" type="submit">Dismiss message</button>
+    </div>
+  </main>
+
+  <script src="./index.js"></script>
+</body>
+</html>
