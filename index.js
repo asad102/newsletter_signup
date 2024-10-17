@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () =>{
 
     });
     dismissBtn.addEventListener('click', () => {
-        console.log(dismissBtn);
-        window.location.href = '/';
+        window.history.back();
     });
 });
