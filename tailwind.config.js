@@ -26,7 +26,7 @@ module.exports = {
     },
     extend: {
       fontSize :  {
-        'Heading' : ['40px', {
+        'Heading' : ['56px', {
           lineHeight : '100%',
           letterSpacing : '0px',
           fontWeight : 'bold',
@@ -57,6 +57,9 @@ module.exports = {
 
         504 : '504px',
         520 : '520px',
+
+        // 400 : '400px',
+        // 593 : '593px',
       },
     },
   },
