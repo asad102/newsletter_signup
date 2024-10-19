@@ -17,37 +17,39 @@
 <body>
 
   <main class="font-roboto text-base bg-Navy-pale min-h-screen flex justify-center items-center">
-    <article id="myarticle" class="all  bg-White lg:rounded-36 rounded-none flex lg:flex-row flex-col-reverse justify-center  items-center lg:gap-16 gap-10 lg:w-928 lg:h-641">
-      <div id="txt" class="txt flex flex-col  gap-10 text-Navy-dark lg:px-0 px-6 lg:pb-0 pb-10 max-w-376">
-        <div class=" flex flex-col gap-6">
-          <h1 class="md:text-Heading text-4xl font-bold">Stay updated!</h1>
-          <p class="text-Body">Join 60,000+ product managers receiving monthly updates on:</p>
-          <ul class="flex flex-col gap-2.5">
-            <li class="flex items-start gap-4"><img src="./assets/images/icon-list.svg" alt="icon-list"> <span> Product discovery and building what matters </span> </li>
-            <li class="flex items-start gap-4"><img src="./assets/images/icon-list.svg" alt="icon-list"> <span> Measuring to ensure updates are a success </span></li>
-            <li class="flex items-start gap-4"><img src="./assets/images/icon-list.svg" alt="icon-list"> <span> And much more! </span></li>
-          </ul>
-        </div>
-        <form id="formemail" class=" flex flex-col gap-6" novalidate>
-          <div class="form-group flex flex-col gap-2">
-            <div class="labeling flex justify-between">
-              <label class="text-Bodysmall" for="email">Email address</label>
-              <span class="text-Vermellion" id="email-error"></span>
+    <article id="myarticle" class="bg-White lg:rounded-36 rounded-none  flex justify-center items-center lg:w-928 lg:h-641">
+      <div class="all lg:w-[840px] lg:h-[593px] w-full flex lg:flex-row flex-col-reverse justify-center  items-center lg:gap-16 gap-10">      
+        <div id="txt" class="txt flex flex-col  gap-10 text-Navy-dark lg:px-0 px-6 lg:pb-0 pb-10 max-w-376">
+          <div class=" flex flex-col gap-6">
+            <h1 class="md:text-Heading text-4xl font-bold">Stay updated!</h1>
+            <p class="text-Body">Join 60,000+ product managers receiving monthly updates on:</p>
+            <ul class="flex flex-col gap-2.5">
+              <li class="flex items-start gap-4"><img src="./assets/images/icon-list.svg" alt="icon-list"> <span> Product discovery and building what matters </span> </li>
+              <li class="flex items-start gap-4"><img src="./assets/images/icon-list.svg" alt="icon-list"> <span> Measuring to ensure updates are a success </span></li>
+              <li class="flex items-start gap-4"><img src="./assets/images/icon-list.svg" alt="icon-list"> <span> And much more! </span></li>
+            </ul>
+          </div>
+          <form id="formemail" class=" flex flex-col gap-6" novalidate>
+            <div class="form-group flex flex-col gap-2">
+              <div class="labeling flex justify-between">
+                <label class="text-Bodysmall" for="email">Email address</label>
+                <span class="text-Vermellion" id="email-error"></span>
+              </div>
+              <input class="rounded-lg h-14 px-6 border border-Grey active:to-Navy-pale stroke-Grey" type="text" name="email" id="email" placeholder="email@company.com">
             </div>
-            <input class="rounded-lg h-14 px-6 border border-Grey active:to-Navy-pale stroke-Grey" type="text" name="email" id="email" placeholder="email@company.com">
-          </div>
-          <div class="form-group bg-Navy-dark  text-White rounded-lg h-14 flex items-center justify-center">
-            <button  type="submit">Subscribe to monthly newsletter</button>
-          </div>
-        </form>
-      </div>
+            <div class="form-group bg-Navy-dark  text-White rounded-lg h-14 flex items-center justify-center">
+              <button  type="submit">Subscribe to monthly newsletter</button>
+            </div>
+          </form>
+        </div>
 
-      <picture class="">
-        <source media="(min-width: 768px)" srcset="./assets/images/illustration-sign-up-desktop.svg"/>
-        <source media="(max-width: 768px)" srcset="./assets/images/illustration-sign-up-mobile.svg"/>
-        <img src="./assets/images/illustration-sign-up-mobile.svg"
-             alt="produce image" class="lg:rounded-2xl rounded-none w-full"/>
-      </picture>
+        <picture class="">
+          <source media="(min-width: 768px)" srcset="./assets/images/illustration-sign-up-desktop.svg"/>
+          <source media="(max-width: 768px)" srcset="./assets/images/illustration-sign-up-mobile.svg"/>
+          <img src="./assets/images/illustration-sign-up-mobile.svg"
+              alt="produce image" class="lg:rounded-2xl rounded-none w-full"/>
+        </picture>
+      </div>
     
     </article>
     <div class="hidden justify-center items-start bg-White text-Navy-pale p-6 w-504 h-520 rounded-36" id="success-msg">
